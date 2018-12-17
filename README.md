@@ -1,2 +1,1 @@
-# blog.seike460.com
-blog.seike460.com
+# blog.seike460.com Powered by Gridsome
