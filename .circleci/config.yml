@@ -9,10 +9,6 @@ jobs:
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
-      - run: apk add --no-cache --virtual .build-deps make gcc g++ python
-      - run: yarn global add npm
-      - run: npm install --production --silent
-      - run: apk del .build-deps
       - run: yarn install
       - save_cache:
           paths:
