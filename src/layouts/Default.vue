@@ -26,6 +26,8 @@ body {
 img {
   border: solid 1px #848484;
   box-shadow: 0px 0px 5px #848484;
+  max-width: 100%;
+  height:auto;
 }
 
 h1 {
