@@ -262,6 +262,21 @@ phases:
 
 ![CodePipeLine6](/20181220/CodePipeLine6.png)
 
+
+## 動作確認
+
+実際にGithubのMasterにMergeします
+
+![GithubMerge](/20181220/GithubMerge.png)
+
+すると Github -> CodePipeLine -> CodeBuild と連携されビルドが行われます
+
+![building](/20181220/building.png)
+
+最終的に完了です
+
+![complete](/20181220/complete.png)
+
 これでひたすらMarkdownを書いてcommitするだけでええ感じにServerlessな配信が出来ます
 
 MasterにMergeされたタイミングでのBuildなのでPRベースでレビューも行えますね
