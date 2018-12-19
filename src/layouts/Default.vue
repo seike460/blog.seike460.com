@@ -19,7 +19,7 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 17px;
   background: teal;
 }
 
