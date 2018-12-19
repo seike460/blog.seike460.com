@@ -1,10 +1,11 @@
 <template>
   <Layout>
-    <h1>seike460</h1>
-    <p>色々書きます</p>
-    <h2>記事</h2>
+    <p>普段調べた技術のことや、どうでもインフォメーションを書きます</p>
+    <h2>BlogPost</h2>
     <div v-for="item in $page.allPost.edges">
-      <g-link :to="item.node.path">{{ item.node.title }}</g-link>
+      <p>{{item.node.month}}月{{item.node.day}}日</p>
+      <p>{{item.node.category}}</p>
+      <g-link :to="item.node.path"><span class="square_btn">{{ item.node.title }}</span></g-link>
     </div>
   </Layout>
 </template>
@@ -15,11 +16,14 @@
 
 <page-query>
 query posts {
-  allPost{
+  allPost {
     edges {
       node {
         path
         title
+        month
+        day
+        category
       }
     }
   }

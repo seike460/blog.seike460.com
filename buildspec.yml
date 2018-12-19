@@ -1,13 +1,4 @@
 version: 0.2
-
-# env:
-#  variables:
-#    key: "value"
-#    key: "value"
-#  parameter-store:
-#    key: "value"
-#    key: "value"
-
 phases:
   install:
     commands:
@@ -15,13 +6,6 @@ phases:
       - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
       - sudo apt-get update && sudo apt-get install yarn
       - yarn install
-        #    finally:
-        #      - command
-        #  pre_build:
-        #    commands:
-        #      - command
-        #    finally:
-        #      - command
   build:
     commands:
       - yarn run build
@@ -30,29 +14,3 @@ phases:
   post_build:
     commands:
       - aws cloudfront create-invalidation --distribution-id E3LSKZQ8F7X40H --paths '/*'
-        #    finally:
-        #      - command
-        # artifacts:
-        #  files:
-        #    - location
-        #    - location
-        #    - name
-        #  discard-paths: yes
-        #  base-directory: location
-        #  secondary-artifacts:
-        #    artifactIdentifier:
-        #      files:
-        #        - location
-        #        - location
-        #      discard-paths: yes
-        #      base-directory: location
-        #    artifactIdentifier:
-        #      files:
-        #        - location
-        #        - location
-        #      discard-paths: yes
-        #      base-directory: location
-        # cache:
-        #  paths:
-        #    - path
-        #    - path
