@@ -50,6 +50,7 @@ GridsomeはVue製の静的HTMLジェネレーターです
 公式のリンクを参考にしてインストールを進めます
 
 -----
+
 <pre><code class="bash">
 $ yarn global add @gridsome/cli
 $ gridsome create blog.seike460.com
@@ -66,6 +67,7 @@ $ gridsome develop
   Site running at:          http://localhost:8080/
   Explore GraphQL data at:  http://localhost:8080/___explore
 </code></pre>
+
 -----
 
 localhostで動いてる感を出して来るので確認します
