@@ -1,4 +1,8 @@
 module.exports = {
+  siteName: 'blog.seike460.com',
+  siteUrl: 'https://blog.seike460.com',
+  siteDescription: '@seike460が普段調べた技術のことや、どうでもインフォメーションを書きます',
+  titleTemplate: 'blog.seike460.com',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
