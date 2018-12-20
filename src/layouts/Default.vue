@@ -92,8 +92,4 @@ border-radius: 0.5em;
 </style>
 
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-89624770-3');
 </script>
