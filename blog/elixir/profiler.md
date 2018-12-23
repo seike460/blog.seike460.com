@@ -10,6 +10,10 @@ category: Elixir
 
 この度は書いてみませんか？という提案を受けて、お世話になってるfukuoka.exのAdventCalendarに混ぜてもらいました！
 
+昨日は[yoshitake_1201](https://qiita.com/yoshitake_1201)さんの[【小ネタ】Eixirのパイプ演算子使用中に第一引数の値を第二引数に渡す方法](https://qiita.com/yoshitake_1201/items/76a2edcd6270f0d2f25e)でした
+
+テストエンジニアとして[弊社](https://fusic.co.jp/)にJoinしてくれて新しい技術を取り込もうと勢力的に動いています
+
 ## 今日書くこと
 
 最近[PHP Conference 2018](http://phpcon.php.gr.jp/2018/)でお話させて頂く機会があり、  
