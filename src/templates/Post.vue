@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1>{{$page.post.title}}</h1>
-    <h2>{{$page.post.month}}年{{$page.post.day}}日 カテゴリ: Serverless</h2>
+    <h2>{{$page.post.month}}月{{$page.post.day}}日 カテゴリ: Serverless</h2>
     <div v-html="$page.post.content"/>
   </Layout>
 </template>
