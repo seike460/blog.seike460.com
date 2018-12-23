@@ -2,7 +2,6 @@
   <div class="layout">
     <header class="header">
       <g-link :to="{ name: 'home' }"><g-image alt="seike460" src="~/img/seike460.png" width="50" /></g-link>
-
       <g-link :to="{ name: 'home' }"><span class="square_btn">blog.seike460.com</span></g-link>
       <nav class="nav">
         <g-link class="nav__link" :to="{ name: 'home' }"><span class="square_btn">Home</span></g-link>
