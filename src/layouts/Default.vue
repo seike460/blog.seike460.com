@@ -6,6 +6,7 @@
       <nav class="nav">
         <g-link class="nav__link" :to="{ name: 'home' }"><span class="square_btn">Home</span></g-link>
         <g-link class="nav__link" :to="{ name: 'about' }"><span class="square_btn">About</span></g-link>
+        <a href="https://slide.seike460.com" class="nav__link" target="_blank"><span class="square_btn outside">slide.seike460.com</span></a>
       </nav>
     </header>
     <slot/>
@@ -83,6 +84,10 @@ border-radius: 0.5em;
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
     border-bottom: none;
+}
+
+.outside {
+    background: #0000ff;
 }
 
 .nav__link {
