@@ -10,7 +10,7 @@ phases:
     commands:
       - yarn run build
     finally:
-      - aws s3 sync --exact-timestamps --delete public s3://blog.seike460.com
+      - aws s3 sync --exact-timestamps --delete dist s3://blog.seike460.com
   post_build:
     commands:
       - aws cloudfront create-invalidation --distribution-id E3LSKZQ8F7X40H --paths '/*'

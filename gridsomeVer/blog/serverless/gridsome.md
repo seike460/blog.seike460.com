@@ -1,8 +1,9 @@
 ---
-tags: Serverless
-date: "2018-12-20"
-path: "/blog/serverless/gridsome"
 title: GridsomeをCodePipeLine + CodeBuild でDeployするServerlessなBlog
+year: 2018
+month: 12
+day: 20
+category: Serverless
 ---
 
 この記事はServerless Advent Calendar 2018の20日目の記事になります
@@ -13,13 +14,6 @@ title: GridsomeをCodePipeLine + CodeBuild でDeployするServerlessなBlog
 私の記事でも多少触れます
 
 本日の内容はこのBlogを作った話です
-
--------
-## 2018/12/25 追記
-その後、同じ静的ジェネレーターの[Gatsby](https://www.gatsbyjs.org/)に切り替えてみました  
-理由はやってみたかったからです  
-使用感に応じて、Gridsomeとどちらにするか選択しようと思います
--------
 
 [弊社Fusic](https://fusic.co.jp)では[技術Blog](https://tech.fusic.co.jp)を運用しているのですが、  
 いわゆる[JAMStack](https://jamstack.org/)なサイトにしたいねと話しています
