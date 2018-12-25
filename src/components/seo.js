@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-//import ReactGA from 'react-ga';
-//ReactGA.initialize('UA-89624770-3');
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-89624770-3');
 //ReactGA.pageview(window.location.pathname + window.location.search);
 
 function SEO({ description, lang, meta, keywords, title }) {
