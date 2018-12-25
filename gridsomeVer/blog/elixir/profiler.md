@@ -1,8 +1,9 @@
 ---
-tags: Elixir
-date: "2018-12-20"
-path: "/blog/elixir/profiler"
 title: ElixirのProfiler比較
+year: 2018
+month: 12
+day: 24
+category: Elixir
 ---
 
 この記事は[fukuoka.ex Elixir/Phoenix Advent Calendar 2018](https://qiita.com/advent-calendar/2018/fukuokaex)の24日目の記事になります
