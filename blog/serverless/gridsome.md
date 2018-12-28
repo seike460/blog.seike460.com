@@ -123,7 +123,9 @@ CloudFront Distributionsの画面でdelivery methodをWebにして進めます
 OriginにはS3Bucketを指定します
 
 - Origin Domain Name
-    - S3で設定した公開バケットを選択します
+    - S3で設定した公開バケットのStatic website hosting エンドポイントを指定します  
+        例) hoge-fuga.s3-website-ap-northeast-1.amazonaws.com
+
 - Origin Path
     - Bucket直下にindex.htmlを配置するため空にします
 - Origin ID
