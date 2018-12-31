@@ -186,6 +186,8 @@ Elixir、Vue、terraform、フロントエンドテストと少しいつもと�
 - インタビュー
     - 1回
         - [やらない理由を解決できればやったほうがいい。清家史郎（株式会社Fusic）～Forkwellエンジニア成分研究所](https://press.forkwell.com/archive/2018/11/01)
+- 資格
+    - AWS solutions architect Professional
 - イベント主催
     - 1回
         - [Serverless Meetup Fukuoka #3](https://serverless.connpass.com/event/102585/)
@@ -200,6 +202,10 @@ Elixir、Vue、terraform、フロントエンドテストと少しいつもと�
 
 人生初の個人インタビュー、普段考えていることをお話してみました  
 11月~12月は業務とコミュニティ活動が怒涛の日々で一日48時間欲しいと真剣に考えてました
+
+AWSの資格も取りました  
+会社からの支援で取らせてもらい感謝です  
+~~11月中に取ってねって言われたの忘れてて、ほぼ一夜漬け状態だったのは内緒です~~
 
 ---
 
