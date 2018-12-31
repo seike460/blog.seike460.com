@@ -1,11 +1,12 @@
+// Core
 import React from 'react'
 import { graphql } from "gatsby"
 
+// components
 import PostLink from "../components/post-link"
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import logo from '../../static/common/seike460.jpg'
 
 const IndexPage = ({
   data: {
@@ -13,16 +14,14 @@ const IndexPage = ({
   },
 }) => {
   const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+    .filter(edge => !!edge.node.frontmatter.date)
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
     return <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>blog.seike460.com</h1>
+    <SEO title="Home" keywords={[`seike460`, `@seike460`, `せいけしろー`, `清家史郎`]} />
+    <h2>このブログに関して</h2>
     <p>技術の事とどうでもインフォメーションを書きます</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <img src={logo} alt="logo" />
-    </div>
+    <h2>Post</h2>
     <div>{Posts}</div>
   </Layout>
 }
@@ -37,7 +36,7 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY/MM/DD")
             path
             title
           }
