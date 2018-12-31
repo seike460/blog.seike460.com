@@ -2,13 +2,16 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+// images
+import logo from '../../static/common/seike460.jpg'
+
 const Header = ({ siteTitle }) => (
-  <div
+    <div
     style={{
-      background: `rebeccapurple`,
+      background: `dodgerblue`,
       marginBottom: `1.45rem`,
     }}
-  >
+    >
     <div
       style={{
         margin: `0 auto`,
@@ -24,6 +27,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
+          <img style={{ float: `left`, maxWidth: `50px`, marginBottom: `1.45rem` }} src={logo} alt="logo" />
           {siteTitle}
         </Link>
       </h1>
