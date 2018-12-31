@@ -81,6 +81,7 @@ AWS Lambda ☓ Goについて話しました
 - カンファレンス登壇
     - 1回
         - [PHPカンファレンス福岡2018](https://phpcon.fukuoka.jp/2018)
+            - [何故PHPなんですか？](https://slide.seike460.com/slides/php-conference-fukuoka-2018#/)
 - ブログ
     - 1回
 
