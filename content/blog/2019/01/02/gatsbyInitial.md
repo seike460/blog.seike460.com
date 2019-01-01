@@ -33,9 +33,7 @@ $ gatsby new blog.seike460.com https://github.com/gatsbyjs/gatsby-starter-blog
 最初から存在するSEO Component(`src/components/seo.js`)に  
 HTMLメタデータを設定してくれます
 
-### gatsby-config.js example
-
-```javascript:title=gatsby-config.js
+```javascript:title=gatsby-config.js example
 siteMetadata: {
   title: `blog.seike460.com`,
   author: `@seike460`,
@@ -53,9 +51,7 @@ siteMetadata: {
 
 - gatsby-plugin-google-analytics
 
-### gatsby-config.js example
-
-```
+```javascript:title=gatsby-config.js example
 {
   resolve: 'gatsby-plugin-google-analytics',
   options: {
@@ -71,9 +67,7 @@ siteMetadata: {
 - gatsby-source-filesystem
 - gatsby-transformer-remark
 
-### gatsby-config.js example
-
-```
+```javascript:title=gatsby-config.js example
 {
   resolve: `gatsby-source-filesystem`,
   options: {
@@ -108,9 +102,7 @@ blogディレクトリ配下にMarkdownファイルを作成する例です
 // make sure this is always the last one
 と書いてあるので最後に書いたほうが良さそうです
 
-### gatsby-config.js example
-
-```
+```javascript:title=gatsby-config.js example
 'gatsby-redirect-from',
 'gatsby-plugin-meta-redirect' // make sure this is always the last one
 ```
@@ -135,24 +127,30 @@ https://blog.seike460.com/2019/01/01/aspiration2019/
 
 本来(ry
 
-- gatsby-plugin-feed
+これはホント入れるだけで良いみたいです
 
-### gatsby-config.js example
+## code Highlight
 
-```json
-`gatsby-plugin-feed`,
+本来(ry
+
+- gatsby-remark-prismjs
+
+```javascript:title=gatsby-config.js example
 {
-  resolve: `gatsby-plugin-manifest`,
+resolve: `gatsby-remark-prismjs`,
   options: {
-    name: `blog.seike460.com`,
-    short_name: `blog.seike460.com`,
-    start_url: `/`,
-    background_color: `#ffffff`,
-    theme_color: `#663399`,
-    display: `minimal-ui`,
-    icon: `content/assets/profile-pic.jpg`,
+    classPrefix: "language-",
+    inlineCodeMarker: null,
+    aliases: {},
+    showLineNumbers: false,
+    noInlineHighlight: false,
   },
 },
+```
+
+Highlightを実施するにはもうひと手間、gatsby-browser.jsに以下を追記
+```javascript:title=gatsby-browser.js example
+require("prismjs/themes/prism.css")
 ```
 
 ### 所感
