@@ -1,42 +1,65 @@
-// Core
 import React from 'react'
-import { graphql } from "gatsby"
+import { Link, graphql } from 'gatsby'
 
-// components
-import PostLink from "../components/post-link"
-import Layout from '../components/layout'
+import Bio from '../components/Bio'
+import Layout from '../components/Layout'
 import SEO from '../components/seo'
+import { rhythm } from '../utils/typography'
 
-const IndexPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => {
-  const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date)
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+class BlogIndex extends React.Component {
+  render() {
+    const { data } = this.props
+    const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMarkdownRemark.edges
 
-    return <Layout>
-    <SEO title="Home" keywords={[`seike460`, `@seike460`, `せいけしろー`, `清家史郎`]} />
-    <h2>このブログに関して</h2>
-    <p>技術の事とどうでもインフォメーションを書きます</p>
-    <h2>Post</h2>
-    <div>{Posts}</div>
-  </Layout>
+    return (
+      <Layout location={this.props.location} title={siteTitle}>
+        <SEO
+          title="All posts"
+          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        />
+        <Bio />
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            </div>
+          )
+        })}
+      </Layout>
+    )
+  }
 }
 
-export default IndexPage
+export default BlogIndex
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 250)
+          excerpt
+          fields {
+            slug
+          }
           frontmatter {
             date(formatString: "YYYY/MM/DD")
-            path
             title
           }
         }
