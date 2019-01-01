@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/Layout'
-import SEO from '../components/seo'
+import Seo from '../components/Seo'
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -10,7 +10,7 @@ class NotFoundPage extends React.Component {
   render() {
     return (
       <Layout location={this.props.location}>
-        <SEO title="404: Not Found" />
+        <Seo title="404: Not Found" />
         <h1
           style={{
             ...scale(1.5),

@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
-import SEO from '../components/seo'
+import Seo from '../components/Seo'
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -15,7 +15,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title={post.frontmatter.title}
           description={post.excerpt}
           keywords={post.frontmatter.tags}
