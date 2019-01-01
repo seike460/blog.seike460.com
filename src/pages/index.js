@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
@@ -15,8 +16,8 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          title="blog.seike460.com"
+          keywords={[`seike460`, `gatsby`, `fusic`]}
         />
         <Bio />
         {posts.map(({ node }) => {
@@ -32,8 +33,9 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>date: {node.frontmatter.date} tags: {node.frontmatter.tags.join(`, `)}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <hr />
             </div>
           )
         })}
@@ -61,6 +63,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "YYYY/MM/DD")
             title
+            tags
           }
         }
       }

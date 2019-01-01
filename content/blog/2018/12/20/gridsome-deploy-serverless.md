@@ -1,5 +1,6 @@
 ---
 date: "2018-12-20"
+tags: ["serverless"]
 title: GridsomeをCodePipeLine + CodeBuild でDeployするServerlessなBlog
 redirect_from:
   - /blog/serverless/gridsome/
@@ -46,7 +47,7 @@ S3 + CloudFrontにGithubからよしなにDeployする方法について書い�
 - Deploy
     - Github + CodePipeLine + CodeBuild
 
-![Architecture](./20181220/Architecture.png)
+![Architecture](/20181220/Architecture.png)
 
 ## Gridsome
 
