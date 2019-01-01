@@ -36,7 +36,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:image`,
-                  content: `/icons/icon-512x512.png`,
+                content: `https://blog.seike460.com/icons/icon-512x512.png`,
               },
               {
                 property: `og:image:width`,
@@ -53,6 +53,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               {
                 name: `twitter:creator`,
                 content: data.site.siteMetadata.author,
+              },
+              {
+                property: `twitter:image`,
+                content: `https://blog.seike460.com/icons/icon-512x512.png`,
               },
               {
                 name: `twitter:title`,
