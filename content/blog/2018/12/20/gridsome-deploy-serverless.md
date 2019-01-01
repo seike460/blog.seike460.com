@@ -59,7 +59,7 @@ GridsomeはVue製の静的HTMLジェネレーターです
 
 -----
 
-<pre><code class="bash">
+```bash
 $ yarn global add @gridsome/cli
 $ gridsome create blog.seike460.com
 ❯ Clone https://github.com/gridsome/gridsome-starter-default.git 1.77s
@@ -74,7 +74,7 @@ $ cd blog.seike460.com
 $ gridsome develop
   Site running at:          http://localhost:8080/
   Explore GraphQL data at:  http://localhost:8080/___explore
-</code></pre>
+```
 
 -----
 
@@ -189,7 +189,7 @@ Cacheの設定で細かい説明は省きます
 
 -----
 
-<pre><code class="yml">
+```yml:title=buildspec.yml
 version: 0.2
 phases:
   install:
@@ -206,7 +206,7 @@ phases:
   post_build:
     commands:
       - aws cloudfront create-invalidation --distribution-id E3LSKZQ8F7X40H --paths '/*'
-</code></pre>
+```
 
 -----
 
