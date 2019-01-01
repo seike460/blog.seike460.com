@@ -7,7 +7,6 @@ import PostLink from "../components/post-link"
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges },
