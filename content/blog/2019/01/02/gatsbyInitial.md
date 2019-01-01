@@ -1,6 +1,6 @@
 ---
 tags: ["gatsby"]
-date: "2019-01-01T17:00:00"
+date: "2019-01-02"
 title: gatsbyの初期設定
 ---
 
@@ -35,16 +35,16 @@ HTMLメタデータを設定してくれます
 
 ### gatsby-config.js example
 
-```js
-  siteMetadata: {
-    title: `blog.seike460.com`,
-    author: `@seike460`,
-    description: `技術的な事とどうでもインフォメーションを書きます`,
-    siteUrl: `https://blog.seike460.com`,
-    social: {
-      twitter: `seike460`,
-    },
+```javascript:title=gatsby-config.js
+siteMetadata: {
+  title: `blog.seike460.com`,
+  author: `@seike460`,
+  description: `技術的な事とどうでもインフォメーションを書きます`,
+  siteUrl: `https://blog.seike460.com`,
+  social: {
+    twitter: `seike460`,
   },
+},
 ```
 
 ## google analytics設定
@@ -111,10 +111,8 @@ blogディレクトリ配下にMarkdownファイルを作成する例です
 ### gatsby-config.js example
 
 ```
-    'gatsby-redirect-from',
-    'gatsby-plugin-meta-redirect' // make sure this is always the last one
-  ],
-}
+'gatsby-redirect-from',
+'gatsby-plugin-meta-redirect' // make sure this is always the last one
 ```
 
 各mdファイルに`redirect_from`をつけます
@@ -142,19 +140,19 @@ https://blog.seike460.com/2019/01/01/aspiration2019/
 ### gatsby-config.js example
 
 ```json
-    `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `blog.seike460.com`,
-        short_name: `blog.seike460.com`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/profile-pic.jpg`,
-      },
-    },
+`gatsby-plugin-feed`,
+{
+  resolve: `gatsby-plugin-manifest`,
+  options: {
+    name: `blog.seike460.com`,
+    short_name: `blog.seike460.com`,
+    start_url: `/`,
+    background_color: `#ffffff`,
+    theme_color: `#663399`,
+    display: `minimal-ui`,
+    icon: `content/assets/profile-pic.jpg`,
+  },
+},
 ```
 
 ### 所感
