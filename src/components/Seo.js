@@ -39,6 +39,14 @@ function SEO({ description, lang, meta, keywords, title }) {
                   content: `/icons/icon-512x512.png`,
               },
               {
+                property: `og:image:width`,
+                content: `512`,
+              },
+              {
+                property: `og:image:height`,
+                content: `512`,
+              },
+              {
                 name: `twitter:card`,
                 content: `summary`,
               },
