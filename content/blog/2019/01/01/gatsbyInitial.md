@@ -1,5 +1,5 @@
 ---
-tags: gatsby
+tags: ["gatsby"]
 date: "2019-01-01T17:00:00"
 title: gatsbyの初期設定
 ---

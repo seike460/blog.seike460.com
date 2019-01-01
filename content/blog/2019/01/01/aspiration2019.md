@@ -1,9 +1,9 @@
 ---
-tags: poem
 date: "2019-01-01"
+tags: ["poem"]
+title: 2019年の抱負
 redirect_from:
   - /blog/poem/aspiration2019/
-title: 2019年の抱負
 ---
 
 ## はじめに

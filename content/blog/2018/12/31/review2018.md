@@ -1,9 +1,9 @@
 ---
-tags: poem
 date: "2018-12-31"
+tags: ["poem"]
+title: 2018年の振り返り
 redirect_from:
   - /blog/poem/review2018/
-title: 2018年の振り返り
 ---
 
 ## 1月 〜 2月
