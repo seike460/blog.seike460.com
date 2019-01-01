@@ -28,16 +28,9 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong>
+              Written by <strong><a href={`https://twitter.com/${social.twitter}`}>{author}</a></strong>
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Please follow my Twitter account
-              </a>
-              {` `}
-              Tech Slides:
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Slide.seike460.com
-              </a>
+              Tech Slides: <a href={`https://slide.seike460.com`}>slide.seike460.com</a>
             </p>
           </div>
         )
