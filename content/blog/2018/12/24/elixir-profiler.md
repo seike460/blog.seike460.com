@@ -1,7 +1,8 @@
 ---
 tags: Elixir
-date: "2018-12-20"
-path: "/blog/elixir/profiler"
+date: "2018-12-24"
+redirect_from:
+  - /blog/elixir/profiler/
 title: ElixirのProfiler比較
 ---
 
@@ -61,7 +62,7 @@ iex(1)> :observer_cli.start
 
 すると次のような結果が表示されます
 
-![observer_cli](/20181224/observer_cli.png)
+![observer_cli](./20181224/observer_cli.png)
 
 現在 beam上で動作しているProcessのメモリだったりIOのInput/Output、GCの様子さえわかります
 

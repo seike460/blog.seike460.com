@@ -1,7 +1,8 @@
 ---
 tags: poem
 date: "2018-12-31"
-path: "/blog/poem/review2018"
+redirect_from:
+  - /blog/poem/review2018/
 title: 2018年の振り返り
 ---
 
