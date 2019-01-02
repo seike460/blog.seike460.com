@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
 
 import { rhythm } from '../utils/typography'
@@ -31,6 +31,8 @@ function Bio() {
               Written by <strong><a href={`https://twitter.com/${social.twitter}`}>{author}</a></strong>
               {` `}
               Tech Slides: <a href={`https://slide.seike460.com`}>slide.seike460.com</a>
+              {` `}
+              Tags: <Link to="tags">List</Link>
             </p>
           </div>
         )
