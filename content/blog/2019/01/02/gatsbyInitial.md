@@ -1,7 +1,7 @@
 ---
 tags: ["gatsby"]
 date: "2019-01-02"
-title: gatsbyの初期設定
+title: gatsbyの初期設定忘備録
 ---
 
 ## この記事は？
