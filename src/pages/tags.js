@@ -10,7 +10,6 @@ import { rhythm } from '../utils/typography'
 class TagsPage extends React.Component {
   render() {
     const { data } = this.props
-      console.log(this)
     const siteTitle = data.site.siteMetadata.title
     const group = data.allMarkdownRemark.group
 
