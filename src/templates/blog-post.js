@@ -39,12 +39,10 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          tags: 
-        {post.frontmatter.tags.map((tag) => {
+          tags:{post.frontmatter.tags.map((tag) => {
           const tagsPath = "tags/" + tag
           return (
-
-              <Link to={tagsPath}>　{tag}　</Link>
+              <span>&nbsp;<Link to={tagsPath}>{tag}</Link>&nbsp;</span>
           )
         })}
         </p>
