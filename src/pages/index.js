@@ -33,11 +33,10 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>date: {node.frontmatter.date} tags:
-              {node.frontmatter.tags.map((tag) => {
+              <small>date: {node.frontmatter.date} tags:{node.frontmatter.tags.map((tag) => {
                 const tagsPath = "tags/" + tag
                 return (
-                <Link to={tagsPath}>　{tag}　</Link>
+                    <span>&nbsp;<Link to={tagsPath}>{tag}</Link>&nbsp;</span>
                 )
               })}
               </small>
