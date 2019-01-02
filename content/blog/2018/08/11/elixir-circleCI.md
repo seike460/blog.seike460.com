@@ -4,15 +4,15 @@ date: 2018-08-11
 tags: ["CI", "Elixir"]
 ---
 
-<p>ElixirにおけるCircleCI設定を簡単ですが纏めておきます</p>
+ElixirにおけるCircleCI設定を簡単ですが纏めておきます
 
-<h1>parroty/excoveralls導入</h1>
+<h2>parroty/excoveralls導入</h2>
 
-<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AB%A5%D0%A5%EC%A5%C3%A5%B8">カバレッジ</a>率を取って一喜一憂したいので、<code>parroty/excoveralls</code> を導入します</p>
+カバレッジ率を取って一喜一憂したいので、<code>parroty/excoveralls</code> を導入します
 
-<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2Fparroty%2Fexcoveralls" title="parroty/excoveralls" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://github.com/parroty/excoveralls">github.com</a></cite></p>
+<iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2Fparroty%2Fexcoveralls" title="parroty/excoveralls" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://github.com/parroty/excoveralls">github.com</a></cite>
 
-<p><code>mix.exs</code> に追加します</p>
+<code>mix.exs</code> に追加します
 
 ```
 def project do
@@ -48,22 +48,22 @@ def project do
 ```
 
 
-<p>その後、 <code>mix deps.get</code>して <code>mix coveralls</code>するといい感じに<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AB%A5%D0%A5%EC%A5%C3%A5%B8">カバレッジ</a>取れます<br/>
-<code>mix coveralls.html</code> を使うとHTMLで見れてカッコいい感じです</p>
+その後、 <code>mix deps.get</code>して <code>mix coveralls</code>するといい感じにカバレッジ取れます<br/>
+<code>mix coveralls.html</code> を使うとHTMLで見れてカッコいい感じです
 
-<h1>CircleCI導入</h1>
+<h2>CircleCI導入</h2>
 
-<p><a href="https://fusic.co.jp">Fusic</a>ではCircleCIを利用しています</p>
+<a href="https://fusic.co.jp">Fusic</a>ではCircleCIを利用しています
 
-<p><a href="https://circleci.com">CircleCI</a>にてADD PROJECTS</p>
+<a href="https://circleci.com">CircleCI</a>にてADD PROJECTS
 
-<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/seike460/20180519/20180519211230.png" alt="f:id:seike460:20180519211230p:plain" title="f:id:seike460:20180519211230p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/seike460/20180519/20180519211230.png" alt="f:id:seike460:20180519211230p:plain" title="f:id:seike460:20180519211230p:plain" class="hatena-fotolife" itemprop="image"></span>
 
-<p>Operating System に<a class="keyword" href="http://d.hatena.ne.jp/keyword/Linux">Linux</a>、Language にElixirを選択するとsampleが表示されますので<br/>
-Repositoryに<code>.circleci/config.yml</code>に配置します</p>
+Operating System にLinux、Language にElixirを選択するとsampleが表示されますので<br/>
+Repositoryに<code>.circleci/config.yml</code>に配置します
 
-<p>CircleCIが提供するElixirのContainerImageが若干古かった（当時1.4)だったので<br/>
-1.6を使うように変更したり、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AB%A5%D0%A5%EC%A5%C3%A5%B8">カバレッジ</a>を取るようにしました</p>
+CircleCIが提供するElixirのContainerImageが若干古かった（当時1.4)だったので<br/>
+1.6を使うように変更したり、カバレッジを取るようにしました
 
 ```
 # Elixir CircleCI 2.0 configuration file
@@ -91,7 +91,7 @@ jobs:
       - run: mix test
 ```
 
-<p>↓</p>
+↓
 
 ```
 # Elixir CircleCI 2.0 configuration file
@@ -128,23 +128,23 @@ jobs:
 ```
 
 
-<p>これで、<code>excoveralls.html</code> にて<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AB%A5%D0%A5%EC%A5%C3%A5%B8">カバレッジ</a>の状況を確認することが出来ます</p>
+これで、<code>excoveralls.html</code> にてカバレッジの状況を確認することが出来ます
 
-<p>※１で <code>/etc/hosts</code>を置き換えている理由を説明します</p>
+※１で <code>/etc/hosts</code>を置き換えている理由を説明します
 
-<p>開発時は Elixirと<a class="keyword" href="http://d.hatena.ne.jp/keyword/Postgresql">Postgresql</a>のContainerは分けているので<br/>
-Container間のつなぎ込みは名前解決で対応しています</p>
+開発時は ElixirとPostgresqlのContainerは分けているので<br/>
+Container間のつなぎ込みは名前解決で対応しています
 
-<p><code>mix.exs</code> のテスト用指定が test になっているので、<br/>
-<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%C4%B6%AD%CA%D1%BF%F4">環境変数</a>は <code>MIX_ENV:test</code> として開発環境Containerと<br/>
-CircleCIのContainerの設定ファイルは <code>config/test.exs</code> 共<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%CC%B2%BD">通化</a>して<br/>
-設定ファイルの管理を楽にしたいです</p>
+<code>mix.exs</code> のテスト用指定が test になっているので、<br/>
+環境変数は <code>MIX_ENV:test</code> として開発環境Containerと<br/>
+CircleCIのContainerの設定ファイルは <code>config/test.exs</code> 共通化して<br/>
+設定ファイルの管理を楽にしたいです
 
-<p>なので、 <code>MIX_ENV:test</code> として設定ファイルを共<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%CC%B2%BD">通化</a>しながら、<br/>
-CircleCI側の名前解決(<a class="keyword" href="http://d.hatena.ne.jp/keyword/127.0.0.1">127.0.0.1</a>)を開発環境用の名前解決と合わせることで<br/>
-上記問題を解決しました。</p>
+なので、 <code>MIX_ENV:test</code> として設定ファイルを共通化しながら、<br/>
+CircleCI側の名前解決(127.0.0.1)を開発環境用の名前解決と合わせることで<br/>
+上記問題を解決しました。
 
-<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/seike460/20180811/20180811021131.png" alt="f:id:seike460:20180811021131p:plain" title="f:id:seike460:20180811021131p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/seike460/20180811/20180811021131.png" alt="f:id:seike460:20180811021131p:plain" title="f:id:seike460:20180811021131p:plain" class="hatena-fotolife" itemprop="image"></span>
 
-<p>その後CircleCIにSlackの設定や<a class="keyword" href="http://d.hatena.ne.jp/keyword/AWS">AWS</a>の設定を行なってますが今回は割愛します</p>
+その後CircleCIにSlackの設定やAWSの設定を行なってますが今回は割愛します
 
