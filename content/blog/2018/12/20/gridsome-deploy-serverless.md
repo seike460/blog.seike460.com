@@ -47,7 +47,7 @@ S3 + CloudFrontにGithubからよしなにDeployする方法について書い�
 - Deploy
     - Github + CodePipeLine + CodeBuild
 
-![Architecture](/20181220/Architecture.png)
+![Architecture](/Architecture.png)
 
 ## Gridsome
 
@@ -80,7 +80,7 @@ $ gridsome develop
 
 localhostで動いてる感を出して来るので確認します
 
-![HelloGridsome](./20181220/HelloGridsome.png)
+![HelloGridsome](/HelloGridsome.png)
 
 簡単過ぎませんかね...  
 こういうインストールや利用が簡単な為の仕組みって重要だとしみじみ感じました
@@ -113,9 +113,9 @@ S3に関してはやったことある方が多いと思いますので
 
 CloudFront Distributionsの画面でdelivery methodをWebにして進めます
 
-![CloudFront1](./20181220/CloudFront1.png)
+![CloudFront1](/CloudFront1.png)
 
-![CloudFront2](./20181220/CloudFront2.png)
+![CloudFront2](/CloudFront2.png)
 
 -----
 
@@ -135,7 +135,7 @@ OriginにはS3Bucketを指定します
     - S3へのアクセスをCloudFrontに制限する設定です  
     そんなにアクセス来るとは思えないし、単純化の為Noを選択します
 
-![CloudFront3](./20181220/CloudFront3.png)
+![CloudFront3](/CloudFront3.png)
 
 -----
 
@@ -148,7 +148,7 @@ Cacheの設定で細かい説明は省きます
 - Allowed HTTP Methods
     -  最終的に静的なHTMLに対するリクエストなので`GET, HEAD`にしています
 
-![CloudFront4](./20181220/CloudFront4.png)
+![CloudFront4](/CloudFront4.png)
 
 -----
 
@@ -163,7 +163,7 @@ Cacheの設定で細かい説明は省きます
         - SSL証明書はACMにて証明書をリクエスト後、  
         DNSに支持されたTXTレコードを設定すれば発行できます
 
-![CloudFront5](./20181220/CloudFront5.png)
+![CloudFront5](/CloudFront5.png)
 
 後は適切にDNSを設定すればサイトが閲覧出来ます
 
@@ -220,30 +220,30 @@ phases:
 
 ### パイプラインの作成
 
-![CodePipeLine1](./20181220/CodePipeLine1.png)
+![CodePipeLine1](/CodePipeLine1.png)
 
 - パイプライン名とIAMロールを設定
 - アーティファクトストア
     - [入出力アーティファクト](https://docs.aws.amazon.com/ja_jp/codepipeline/latest/userguide/welcome.html#welcome-introducing)の保存先です。デフォルトで良いと思います
 
-![CodePipeLine2](./20181220/CodePipeLine2.png)
+![CodePipeLine2](/CodePipeLine2.png)
 
 - ソースプロバイダをGithubに選択してOAuth認証
 - リポジトリとブランチを設定
 - 変更検出オプションはGithubウェブフックにします
 
-![CodePipeLine3](./20181220/CodePipeLine3.png)
+![CodePipeLine3](/CodePipeLine3.png)
 
 - ビルドプロバイダに CodeBuildを設定するとプロジェクト名選択
 - 新しく作成する場合はCreate projectを選択
 
-![CodePipeLine4](./20181220/CodePipeLine4.png)
+![CodePipeLine4](/CodePipeLine4.png)
 
 ## CodeBuild
 
 続いてCodeBuildの設定を行います
 
-![CodeBuild1](./20181220/CodeBuild1.png)
+![CodeBuild1](/CodeBuild1.png)
 
 - マネージド型イメージを利用
 - OSはUbuntu
@@ -255,11 +255,11 @@ phases:
         - 公開バケットへのPUT
         - CloudFrontキャッシュのクリア
 
-![CodeBuild2](./20181220/CodeBuild2.png)
+![CodeBuild2](/CodeBuild2.png)
 
 - buildspec.ymlを配置しているので、デフォルトのものを利用
 
-![CodeBuild3](./20181220/CodeBuild3.png)
+![CodeBuild3](/CodeBuild3.png)
 
 設定後、CodePipeLineに進みます
 
@@ -267,27 +267,27 @@ phases:
 
 - 作成されたプロジェクトを選択します
 
-![CodePipeLine5](./20181220/CodePipeLine5.png)
+![CodePipeLine5](/CodePipeLine5.png)
 
 - ビルドステージでデプロイしてしまっているのと、  
 アプリケーションをデプロイする訳ではないのでスキップします
 
-![CodePipeLine6](./20181220/CodePipeLine6.png)
+![CodePipeLine6](/CodePipeLine6.png)
 
 
 ## 動作確認
 
 実際にGithubのMasterにMergeします
 
-![GithubMerge](./20181220/GithubMerge.png)
+![GithubMerge](/GithubMerge.png)
 
 すると Github -> CodePipeLine -> CodeBuild と連携されビルドが行われます
 
-![building](./20181220/building.png)
+![building](/building.png)
 
 最終的に完了です
 
-![complete](./20181220/complete.png)
+![complete](/complete.png)
 
 これでひたすらMarkdownを書いてcommitするだけでええ感じにServerlessな配信が出来ます
 

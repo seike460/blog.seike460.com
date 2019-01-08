@@ -62,7 +62,7 @@ iex(1)> :observer_cli.start
 
 すると次のような結果が表示されます
 
-![observer_cli](./20181224/observer_cli.png)
+![observer_cli](/observer_cli.png)
 
 現在 beam上で動作しているProcessのメモリだったりIOのInput/Output、GCの様子さえわかります
 
