@@ -4,24 +4,23 @@ tags: ["non_tech", "travel"]
 title: "Fusicの社員旅行でバリに行ってきた"
 ---
 
-タイトルの通り、社員旅行でバリに行ってきました  
+タイトルの通り、社員旅行でバリに行ってきました
 
 単純に楽しかったのと、Fusicに入りたいなーって思ってくれてる人に  
 楽しさが伝われば良いなと思ってブログに書くことにしました
 
 ## 初日
 
-朝、福岡空港に集合してまずはインドネシア空港に向かいました
+朝、福岡空港に集合してまずはインドネシアの空港に向かいました
 
 飛行機で6時間ほどかかるのですぐに始めることにしました
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">始まってる <a href="https://t.co/81U7WVKDXt">pic.twitter.com/81U7WVKDXt</a></p>&mdash; せいけしろー (@seike460) <a href="https://twitter.com/seike460/status/1088226198449152000?ref_src=twsrc%5Etfw">2019年1月24日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 機内サービスの映画で [カメラを止めるな！](http://kametome.net/index.html)やってたので  
 機内食と無限タイガービールで楽しく機内を過ごせて最高でした
 
-シンガポール空港ではあまり時間もなく、ただただ乗り継ぎを行いまた飛行機で移動
+シンガポールの空港ではあまり時間もなく、ただただ乗り継ぎを行い、飛行機でバリの空港に移動
 
 ダウンロードしておいたAmazon Prime Video消化しながら機内食と無限タイガービール飲んでて  
 お腹いっぱいで飛行機の旅を終えました
@@ -50,7 +49,7 @@ title: "Fusicの社員旅行でバリに行ってきた"
 
 ## 二日目
 
-朝からビーチに移動する予定だったので、起きてからホテルからの景色を撮ってから  
+朝からビーチに移動する予定だったので、起きてホテルからの景色を撮って後  
 ホテルのビュッフェで食事してました
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ホテルからの景色 <a href="https://t.co/R06kk3YLtm">pic.twitter.com/R06kk3YLtm</a></p>&mdash; せいけしろー (@seike460) <a href="https://twitter.com/seike460/status/1088566051015516160?ref_src=twsrc%5Etfw">2019年1月24日</a></blockquote>
@@ -109,7 +108,7 @@ title: "Fusicの社員旅行でバリに行ってきた"
 
 時間調整に銀細工の工場で買い物したりしながらゴアガジャ遺跡へ
 
-神秘的だったのと、ガイドさんがユニークなからで飽きずに楽しめました
+神秘的だったのと、ガイドさんがユニークな方で飽きずに楽しめました
 
 ![ゴア・ガジャ](travel_to_bali_fusic2.jpg)
 ![ゴア・ガジャ](travel_to_bali_fusic3.jpg)
