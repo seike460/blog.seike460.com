@@ -35,6 +35,7 @@ Vueの実装に関しては他の人がめちゃくちゃ良い発表してた�
 - [Nuxt.js 2.4 に更新するためにやったこと](https://qiita.com/dojineko/items/ae7393dc83fb1f5fb0a4)
 - [Vue.jsのUIフレームワークを試してみた](https://speakerdeck.com/soichirokatsuki/vuefalseuihuremuwakuwoshi-sitemita)
 - [Vue Native でアプリ開発](https://speakerdeck.com/takec24/vue-native-deapurikai-fa)
+- [NuxtとLaravelを連携する上でやったこと](https://speakerdeck.com/ayasamind/nuxttolaravelwolian-xi-surushang-deyatutakoto)
 
 ## おまけ
 
