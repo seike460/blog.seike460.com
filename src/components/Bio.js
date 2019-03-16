@@ -2,6 +2,10 @@ import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
 
+
+import { FaTags } from 'react-icons/fa';
+import { FaChalkboardTeacher } from 'react-icons/fa';
+
 import { rhythm } from '../utils/typography'
 
 function Bio() {
@@ -14,7 +18,8 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginRight: rhythm(1 / 2),
+              marginBottom: rhythm(0.5),
             }}
           >
             <Image
@@ -27,13 +32,30 @@ function Bio() {
                 borderRadius: `100%`,
               }}
             />
-            <p>
+            <div
+              style={{
+                marginTop: 15,
+                marginRight: rhythm(1 / 2),
+              }}
+            >
               Written by <strong><a href={`https://twitter.com/${social.twitter}`}>{author}</a></strong>
-              {` `}
-              Tech Slides: <a href={`https://slide.seike460.com`}>slide.seike460.com</a>
-              {` `}
-              Tags: <Link to="tags">List</Link>
-            </p>
+            </div>
+            <div
+              style={{
+                marginTop: 15,
+                marginRight: rhythm(1 / 2),
+              }}
+            >
+              <a href={`https://slide.seike460.com`}><FaChalkboardTeacher />Tech Slides: slide.seike460.com</a>
+            </div>
+            <div
+              style={{
+                marginTop: 15,
+                marginRight: rhythm(1 / 2),
+              }}
+            >
+              <Link to="tags"><FaTags />TagsList</Link>
+            </div>
           </div>
         )
       }}
