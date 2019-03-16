@@ -5,6 +5,9 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
+import { FaClock } from 'react-icons/fa';
+import { FaTags } from 'react-icons/fa';
+
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
@@ -33,10 +36,10 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>date: {node.frontmatter.date} tags:{node.frontmatter.tags.map((tag) => {
+              <small><FaClock />{node.frontmatter.date} <FaTags />{node.frontmatter.tags.map((tag, id) => {
                 const tagsPath = "tags/" + tag
                 return (
-                    <span>&nbsp;<Link to={tagsPath}>{tag}</Link>&nbsp;</span>
+                    <span key={id}>&nbsp;<Link to={tagsPath}>{tag}</Link>&nbsp;</span>
                 )
               })}
               </small>
