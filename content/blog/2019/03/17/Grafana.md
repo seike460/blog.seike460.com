@@ -141,6 +141,7 @@ http {
         ssl_session_timeout  10m;
         ssl_ciphers HIGH:!aNULL:!MD5;
         ssl_prefer_server_ciphers on;
+        ssl_protocols TLSv1.2;
 
         include /etc/nginx/default.d/*.conf;
 
