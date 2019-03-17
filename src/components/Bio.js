@@ -46,7 +46,7 @@ function Bio() {
                 marginRight: rhythm(1 / 2),
               }}
             >
-              <a href={`https://slide.seike460.com`}><FaChalkboardTeacher />Tech Slides: slide.seike460.com</a>
+              <a href={`https://slide.seike460.com`}><FaChalkboardTeacher />TechSlides</a>
             </div>
             <div
               style={{
