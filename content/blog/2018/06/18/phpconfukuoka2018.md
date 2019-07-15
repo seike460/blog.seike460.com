@@ -31,10 +31,6 @@ PHPカンファレンス福岡2018にて登壇させて頂く機会を頂きま�
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">そーだいさんは発表上手いですねって言われること多いけど最低でもフルで素振り三回はするし、それくらいするとスムーズに喋れるところと喋れないところわかるから全部スムーズに喋れるまで調整してるだけでマジオススメなんで資料は一週間前に作って素振り三回してみてほしい&mdash; そーだい@初代ALF (@soudai1025) <a href="https://twitter.com/soudai1025/status/998719537775235072?ref_src=twsrc%5Etfw">2018年5月22日</a></blockquote>
 
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
 <a href="https://fusic.co.jp/">弊社</a>の社員にも協力して時間もらって聞いてもらったり、<br/>
 <a href="https://twitter.com/nako0123">@nako0123</a> さんをお招きして一緒に練習したりしてました。<br/>
 やっぱり素振ってて良かったと思います。<br/>

@@ -66,7 +66,6 @@ class Layout extends React.Component {
         <footer>
           © <a href={`https://twitter.com/seike460`}>@seike460</a> 2018, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-        <script defer src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
       </div>
     )
   }
