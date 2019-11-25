@@ -12,26 +12,26 @@ Prometheusとfluentdは[前回のものを](/2019/03/16/Prometheus/)参照して
 - Amazon Linux2
 - Prometheus 2.8.0
 - fluentd 1.3.3
-- Grafana 6.0.1-1
+- Grafana 6.4.2-1
 
 ## Grafana インストール
 
 [Download Grafana](https://grafana.com/grafana/download?platform=linux)を参考にインストールします
 
 ```bash
-$ curl https://dl.grafana.com/oss/release/grafana-6.0.1-1.x86_64.rpm -O
-$ sudo yum localinstall grafana-6.0.1-1.x86_64.rpm
+$ curl https://dl.grafana.com/oss/release/grafana-6.4.2-1.x86_64.rpm -O
+$ sudo yum localinstall grafana-6.4.2-1.x86_64.rpm
 ```
 
 直接yum installしても大丈夫です
 
 ```bash
-$ sudo yum install https://dl.grafana.com/oss/release/grafana-6.0.1-1.x86_64.rpm
+$ sudo yum install https://dl.grafana.com/oss/release/grafana-6.4.2-1.x86_64.rpm
 ```
 
 systemctl設定も作成してくれていますので起動するだけで良いです
 
-```
+```bash
 $ sudo systemctl start grafana-server.service
 ```
 
