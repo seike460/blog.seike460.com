@@ -1,7 +1,7 @@
 ---
 title: Serverless FrameworkでLambdaとS3を作成する
 date: 2018-10-23
-tags: ["serverless", "AWS"]
+tags: ["Serverless", "AWS"]
 ---
 
 私がAWSのServerless環境を作成する時、基本的には[Serverless Framework](https://serverless.com/)を使います  

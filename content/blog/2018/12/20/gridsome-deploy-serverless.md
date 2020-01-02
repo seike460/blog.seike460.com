@@ -1,6 +1,6 @@
 ---
 date: "2018-12-20"
-tags: ["serverless"]
+tags: ["Serverless"]
 title: GridsomeをCodePipeLine + CodeBuild でDeployするServerlessなBlog
 redirect_from:
   - /blog/serverless/gridsome/
