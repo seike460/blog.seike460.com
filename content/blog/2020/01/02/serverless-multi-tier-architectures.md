@@ -1,6 +1,6 @@
 ---
 date: "2020-01-02"
-tags: ["serverless", "AWS"]
+tags: ["Serverless", "AWS"]
 title: Serverless three tier architectures
 ---
 
