@@ -24,7 +24,7 @@
     "gatsby-remark-copy-linked-files": "*",
     "gatsby-remark-images": "*",
     "gatsby-remark-prismjs": "*",
-    "gatsby-remark-prismjs-spectre": "^3.0.0-beta.0",
+    "gatsby-remark-prismjs-spectre": "*",
     "gatsby-remark-responsive-iframe": "*",
     "gatsby-remark-smartypants": "*",
     "gatsby-source-filesystem": "*",
@@ -65,7 +65,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "deploy": "yarn build && aws s3 sync --exact-timestamps --delete public s3://blog.seike460.com && aws cloudfront create-invalidation --distribution-id E3LSKZQ8F7X40H --paths '/*'",
+    "deploy": "npm run build && aws s3 sync --exact-timestamps --delete public s3://blog.seike460.com && aws cloudfront create-invalidation --distribution-id E3LSKZQ8F7X40H --paths '/*'",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }
