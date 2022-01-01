@@ -63,7 +63,7 @@ PHPerKaigi2021のときの様な反応はなかった
 
 - Fukuoka.go
     - [Goでパイプライン](https://speakerdeck.com/seike460/pipeline-with-go)
-- [Fusic Tech Live Vol.2](https://fusic.connpass.com/event/206957/)
+- [Fusic Tech Live Vol.2](https://fusic.connpass.com/event/211939/)
 
 AWS Lambdaを使うならGoが良いと考えているので、Goは学び続けたい  
 パイプラインパターンに関して話した  
@@ -77,7 +77,7 @@ Fusic Tech Live を定期的にする為にも継続
 
 ## 7月
 
-- [Fusic Tech Live Vol.1.5](https://fusic.connpass.com/event/206957/)
+- [Fusic Tech Live Vol.1.5](https://fusic.connpass.com/event/216110/)
 
 Fusic Tech Live Vol.1にて中止になってしまったものをお昼休みに  
 少し余裕が持てなかったので、夕方〜夜にかけてが開始しやすいなと感じる
@@ -91,7 +91,7 @@ WinWinにできている気がする
 
 ## 8月
 
-- [Fusic Tech Live Vol.3](https://fusic.connpass.com/event/206957/)
+- [Fusic Tech Live Vol.3](https://fusic.connpass.com/event/218572/)
 - ISUCON 11 予選落ち
 
 引き続きFusic Tech Liveを行った  
@@ -125,7 +125,7 @@ WinWinにできている気がする
 - PHP Conference Japan 2021
     - [PHPWebアプリケーションパフォーマンスチューニングの勘所  
 〜なぜアプリケーションは速くなるのか〜](https://speakerdeck.com/seike460/why-php-applications-are-faster)
-- [Fusic Tech Live Vol.4](https://fusic.connpass.com/event/206957/)
+- [Fusic Tech Live Vol.4](https://fusic.connpass.com/event/223011/)
 
 少し擦り過ぎている気がするけどパフォーマンスチューニングの話  
 ISUCONに惚れ込んでることもあり、話すならパフォーマンスチューニングの話がしたいのだ…  
@@ -157,7 +157,7 @@ F社外の人たちにAWSの良さを話してワークショップを行う外�
 ## 12月
 
 - AWSに関する外部講師
-- [Fusic Tech Live Vol.5](https://fusic.connpass.com/event/206957/)
+- [Fusic Tech Live Vol.5](https://fusic.connpass.com/event/227279/)
 
 上記に引き続きAPN Immersion DayとFusic Tech Live  
 自分個人にフォーカスするのではなくて、会社としてしっかり動いている  
