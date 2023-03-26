@@ -129,12 +129,12 @@ nさん、最近の僕の情報源になってて今回も知識の泉だった
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/phperkaigi?src=hash&amp;ref_src=twsrc%5Etfw">#phperkaigi</a> 15:55から <a href="https://twitter.com/bengo4_creators?ref_src=twsrc%5Etfw">@bengo4_creators</a> の <a href="https://twitter.com/TSUCHIYA_Naoki?ref_src=twsrc%5Etfw">@TSUCHIYA_Naoki</a> さんと一緒に「IA駆動開発」と題したアンカファンレンストークを行います。続いてDevelopers Update (2)のトークも行います。</p>&mdash; Akihito Koriyama (@koriym) <a href="https://twitter.com/koriym/status/1639492284944388098?ref_src=twsrc%5Etfw">March 25, 2023</a></blockquote>
 
-その後無茶振りを繰り返し、アンカンファレンスを終えた
+その後Azureわかんない！と思ってその場に来てくれた@kaz_29さんにも視線で無茶振りしながら  
+Azure情報を追加してもらい、アンカンファレンスを終えた
 
 新しい情報も追加してくれたので、@makiesさん呼んで良かった〜って思ってた
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Copilot CLIで立てたRequest-Driven Web Service（App Runner）からPublishしたSNSは、Worker Service (privateなECS Fargate)でSubscribeできます。先程とっさに出てこなかったエンドポイントは、コンテナのENTRYPOINTになりますね<a href="https://twitter.com/hashtag/phperkaigi?src=hash&amp;ref_src=twsrc%5Etfw">#phperkaigi</a> <a href="https://twitter.com/hashtag/c?src=hash&amp;ref_src=twsrc%5Etfw">#c</a><a href="https://t.co/9vUM45yNxN">https://t.co/9vUM45yNxN</a></p>&mdash; マキ @makies.eth (@makies) <a href="https://twitter.com/makies/status/1639544035336671233?ref_src=twsrc%5Etfw">March 25, 2023</a></blockquote>
-
 
 クロージングでPHPカンファレンス福岡2023の紹介をさせてもらった
 
