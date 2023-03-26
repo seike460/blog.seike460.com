@@ -40,7 +40,7 @@ title: やっぱりPHPerKaigi2023は最高だった
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">更新のタイミング完璧じゃないか<br>さて、資料の更新を始めよう</p>&mdash; せいけしろー (@seike460) <a href="https://twitter.com/seike460/status/1638083866178228225?ref_src=twsrc%5Etfw">March 21, 2023</a></blockquote>
 
-フィードバックするとちゃんと反映されるんだと実感したし、実際凄登壇としては綺麗な方向に持っていけた  
+フィードバックすると反映される事を実感したし、実際登壇としては綺麗な方向に持っていけた  
 とてもいい体験をした、日本のPHPerに拡散を始めてくれたnさんありがとうございます！  
 
 ## 登壇後
@@ -129,7 +129,7 @@ nさん、最近の僕の情報源になってて今回も知識の泉だった
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/phperkaigi?src=hash&amp;ref_src=twsrc%5Etfw">#phperkaigi</a> 15:55から <a href="https://twitter.com/bengo4_creators?ref_src=twsrc%5Etfw">@bengo4_creators</a> の <a href="https://twitter.com/TSUCHIYA_Naoki?ref_src=twsrc%5Etfw">@TSUCHIYA_Naoki</a> さんと一緒に「IA駆動開発」と題したアンカファンレンストークを行います。続いてDevelopers Update (2)のトークも行います。</p>&mdash; Akihito Koriyama (@koriym) <a href="https://twitter.com/koriym/status/1639492284944388098?ref_src=twsrc%5Etfw">March 25, 2023</a></blockquote>
 
-その後無茶振りを繰り返し、アンカンファレンスを追えた
+その後無茶振りを繰り返し、アンカンファレンスを終えた
 
 新しい情報も追加してくれたので、@makiesさん呼んで良かった〜って思ってた
 
@@ -164,6 +164,9 @@ nさん、最近の僕の情報源になってて今回も知識の泉だった
 
 社外の人にこんな真っ直ぐな言葉をもらえるの凄くありがたいことだと思う  
 背筋が伸びた、明日からまたやっていく
+
+でも流石に始発まで飲んだのは疲れた  
+16時間くらいアルコールをちょこちょこ摂取してたんだな
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">昨日は久しぶりに正論で殴られたのでめちゃくちゃ気持ち良かったな<br>「…でも」とか言ってる場合じゃない、正しいって気持ちになって、やるしかないと自覚出来たので、やっぱりカンファレンスの懇親会は大好き</p>&mdash; せいけしろー (@seike460) <a href="https://twitter.com/seike460/status/1639813817441062912?ref_src=twsrc%5Etfw">March 26, 2023</a></blockquote>
 
